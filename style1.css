@@ -1,109 +1,160 @@
-*{
-	margin: 0;
-	font-family: sans-serif;
-	padding:  0;
+* {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0;
 }
 
 .alert {
-	padding: 10px;
-	margin: 5px;
-	background-color: #ddd;
+    padding: 10px;
+    margin: 5px;
+    background-color: #ddd;
 }
- 
-.container{
-	height: 125%;
-	width: 100%;
-	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) ,url(a.jpg);
-	background-position: center;
-	background-size: cover;
-	position: absolute;
-	background-attachment: fixed;
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {}
+
+
+/* // Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {}
+
+
+/* // Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {}
+
+
+/* // Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {}
+
+
+/* // Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width */
+
+.container {
+    height: 130%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(a.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    background-attachment: fixed;
 }
-.formbox{
-	width: 380px;
-	height: 560px;
-	position: relative;
-	margin: 6% auto;
-	background: #fff;
-	padding: 5px;
-	border-radius: 40px;
-	overflow: hidden;
+
+.formbox {
+    width: 380px;
+    height: 560px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    border-radius: 40px;
+    overflow: hidden;
 }
-.button{
-    margin	: 35px auto;
-	width: 220px;
+
+.form {
+    width: 330px;
+    height: 200px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.button {
+    margin: 35px auto;
+    width: 220px;
     position: relative;
     box-shadow: 0 0 20px 9px #ff61241f;
     border-radius: 35px;
 }
-.btn{
-	padding: 10px 30px;
+
+.btn {
+    padding: 10px 30px;
     cursor: pointer;
     background: transparent;
     position: relative;
-    border:0;
+    border: 0;
     outline: none;
 }
-#b{
-	top: 0;
-	left: 0;
-	position: absolute;
-	width: 110px;
-	height: 100%;
-	background: linear-gradient(to right , #ff105f,#ffad06);
-	border-radius: 30px;
-	transition: .5s;
+
+#b {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: .5s;
 }
 
-.input{
-	position: absolute;
-	width: 300px;
-	transition: .5s;
-	text-align: center;
+.input {
+    position: absolute;
+    width: 300px;
+    transition: .5s;
+    text-align: center;
 }
 
-.input-f{
-	width: 100%;
-	padding: 10px 0;
-	margin: 5px 0;
-	border-left:0;
-	border-top:0;
-	border-right: 0;
-	border-bottom: 1px solid #999;
-	outline: none;
-	background: transparent;
+.otp {
+    position: absolute;
+    width: 300px;
+    transition: .5s;
+    text-align: center;
+    left: 50px;
 }
-.submit-btn{
-	width: 85%;
-	padding: 10px 30px;
-	cursor: pointer;
-	display: block;
-	margin: auto;
-	background : linear-gradient(to right , #ff105f,#ffad06);
-	transition:  .5s;
-	border:0;
-	outline: none;
-	border-radius:  30px;
-	top: 100px;
-	bottom: 40px;
 
+.input-f {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    transition: .5s;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    top: 100px;
+    bottom: 40px;
 }
 
 .gender {
-	margin: 0 20px;
-	display: inline-block;
+    margin: 0 20px;
+    display: inline-block;
 }
-#register{
-	left: 50px;
+
+#register {
+    left: 50px;
 }
-.box{
-	margin: 30px 5px 30px 1px;
+
+.box {
+    margin: 30px 5px 30px 1px;
 }
-span{
-	color: #777;
-	bottom: 68px;
-	font-size: 12px;
+
+span {
+    color: #777;
+    bottom: 68px;
+    font-size: 12px;
 }
-#login{
-left: 450px;
+
+#login {
+    left: 450px;
 }
