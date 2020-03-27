@@ -26,8 +26,8 @@
                 <input type="button" onclick="sendEmail()" value="Send An Otp" class="btn btn-primary">
                 <br>
                 <br>
-                <input id="otp" placeholder="Enter the otp" class="form-control">
-                <input type="button"value="Submit" class="btn btn-primary" onclick="checkotp()">
+                <input id="otp_box" placeholder="Enter the otp" class="form-control">
+                <input id="otp" type="button"value="Submit" class="btn btn-primary" onclick="checkotp()">
             </div>
         </div>
     </div>
@@ -40,8 +40,8 @@
             var email = $("#email");
             var random = Math.floor(Math.random() * 100000);     // returns a random integer from 0 to 99
             var check = [random,email];
+            var otp = document.getElementById("otp").value;
             var otpWithEmail;
-
             if (isNotEmpty(email)) {
                 $.ajax({
                    url: 'sendEmail.php',
@@ -52,9 +52,8 @@
                        random : random,
                    }, success: function (response) {
                           console.log(response);
-                          otpWithEmail = {...response.response};
+                          otpWithEmail = response;
                           console.log(otpWithEmail);
-                          console.log(check);
                         if (response.status == "success")
                             alert('Email Has Been Sent!');
                         else {
@@ -69,7 +68,7 @@
         
         //   console.log(random);
         
-                 if(JSON.stringify(check)==JSON.stringify(otpWithEmail))
+                 if(otpWithEmail.indexOf('otp'))
                     {
                          
                         console.log("matched");

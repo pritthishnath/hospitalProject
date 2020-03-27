@@ -2,6 +2,9 @@
     margin: 0;
     font-family: sans-serif;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 .alert {
@@ -9,30 +12,6 @@
     margin: 5px;
     background-color: #ddd;
 }
-
-
-/* // Extra small devices (portrait phones, less than 576px) */
-
-@media (max-width: 575.98px) {}
-
-
-/* // Small devices (landscape phones, less than 768px) */
-
-@media (max-width: 767.98px) {}
-
-
-/* // Medium devices (tablets, less than 992px) */
-
-@media (max-width: 991.98px) {}
-
-
-/* // Large devices (desktops, less than 1200px) */
-
-@media (max-width: 1199.98px) {}
-
-
-/* // Extra large devices (large desktops)
-// No media query since the extra-large breakpoint has no upper bound on its width */
 
 .container {
     height: 130%;
@@ -42,6 +21,127 @@
     background-size: cover;
     position: absolute;
     background-attachment: fixed;
+}
+
+body {
+    font-family: montserrat;
+}
+
+.logo {
+    float: left;
+    margin-left: 20px;
+    height: 90px;
+    width: 150px;
+    margin-top: 5px;
+}
+
+
+/* nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+} */
+
+
+/* a.active,
+a:hover {
+    background: #1b9bff;
+    transition: .5s;
+} */
+
+
+/* 
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+} */
+
+
+/* @media (max-width: 952px) {
+    label.logo {
+        font-size: 28px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+} */
+
+section {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(bgadmin.jpeg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.search-bar {
+    align-items: center;
+    width: 600px;
+}
+
+.search-box {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+    margin-left: 400px;
+    top: 80px;
+    background-size: cover;
+    position: absolute;
+    bottom: 300px;
 }
 
 .formbox {
@@ -158,3 +258,5 @@ span {
 #login {
     left: 450px;
 }
+
+.scrollable {}

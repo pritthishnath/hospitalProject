@@ -95,21 +95,7 @@
         })
       }
      })
-  $("#login").submit(function(event) {
-    event.preventDefault();    
-      $.ajax({
-        url: "login.php",
-        type: "POST",
-        data: $(this).serialize(),
-         success: function (res) {
-             console.log(res);
-             swal.fire(
-                res,
-                  )
-         }
-      })
-    
-     })
+ s
  </script>
 </body>
 </html>
