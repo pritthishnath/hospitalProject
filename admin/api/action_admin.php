@@ -1,5 +1,5 @@
 <?php
-include 'config_admin.php';
+include 'db_config.php';
 $update = false ;
 $sid="";
 $did = "";

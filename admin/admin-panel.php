@@ -17,7 +17,7 @@
   <style type="text/css">
     #inputbtn:hover{cursor:pointer;}
     body {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(bgadmin.jpeg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/bgadmin.jpeg);
         background-size: cover;
           }
           .list-group{
@@ -30,7 +30,7 @@
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
   <!-- Brand -->
   
-  <a class="navbar-brand"><img src="medica.png" alt="" style="height:60px; width:110px;float:left;">Medica Superspeciality Hospital</a>
+  <a class="navbar-brand"><img src="images/medica.png" alt="" style="height:60px; width:110px;float:left;">Medica Superspeciality Hospital</a>
 
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">

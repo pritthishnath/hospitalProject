@@ -1,7 +1,6 @@
 <?php
  
- include 'action_admin.php';
- require "fpdf.php";
+ include 'api/action_admin.php';
 
 ?>
 
@@ -17,61 +16,35 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Ubuntu:400,500,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/admin.css">
    <style>
        section {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(bg.jpg);
-    background-size:cover;
-    height:100%;
+           padding: 11rem 0;
+           background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/bg.jpg);
+           background-size:cover;
+           height:100%;
        }
    </style>
     </head>
     <body>
+       <?php 
+            $firstBtn = "Doctors";
+            include "layout/header.php";
+        ?>
+    <section>
+        <div class="container-fluid">
+        <div class="row justify-content-center">
+            <?php if(isset($_SESSION['response'])){?>
 
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <!-- Brand -->
-  <a class="navbar-brand" href="#">Medica Superspeciality Hospital</a>
-
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <!-- Navbar links -->
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-           <ul class="nav nav-pills ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Admin-Portel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Management</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Log out</a>
-                    </li>
-           </ul>
-
-  </div>
-</nav>
-<section>
-    <div class="container-fluid">
-       <div class="row justify-content-center">
-        <?php if(isset($_SESSION['response'])){?>
-
-        <div class="alert alert-<?= $_SESSION['res_type'] ; ?> alert-dismissible text-center">
-  <button type="button" class="close" data-dismiss="alert">&times;</button>
-       <?= $_SESSION['response'] ;?> 
-</div>
+            <div class="alert alert-<?= $_SESSION['res_type'] ; ?> alert-dismissible text-center">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <?= $_SESSION['response'] ;?> 
+            </div>
 
   <?php      }  unset($_SESSION['response']) ?>
         </div>

@@ -1,0 +1,141 @@
+/* BASE ////////////////////////////////// */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+}
+
+/* NAVIGATION ////////////////////////////////// */
+.navigation {
+    padding: 1rem;
+    background-color: #84b0d4;
+    background-image: linear-gradient(to bottom right, rgb(134, 190, 235), rgb(22, 105, 173));
+    color: #25679c;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* display: none; */
+}
+
+.navigation-icon {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-logo {
+    width: 120px;
+}
+
+.navigation-brand-link {
+    font: inherit;
+}
+
+.navigation-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.navigation-item {
+    margin: 0 2rem;
+}
+
+.navigation-link:visited,
+.navigation-link:link {
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.navigation-link:hover {
+    color: #0b3e68;
+    text-decoration: none;
+}
+
+/* CONTENT AREA ////////////////////////////////// */
+
+.content-area {
+    background-image: linear-gradient(to right, rgba(73, 129, 167, 0.795), rgba(12, 12, 12, 0.781)),
+        url(../images/bgadmin.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* SIDE BAR ////////////////////////////////// */
+.sidebar {
+    width: 20%;
+    padding-top: 11rem;
+    background-color: #bbd9dd9c;
+    height: 100vh;
+}
+
+.sidebar-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-heading {
+    font-weight: 700;
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+    color: #0b3e68;
+    padding: 0 3rem;
+    margin-bottom: 1rem;
+    transition: all .3s;
+}
+
+.sidebar-item {
+    padding: 0 3rem;
+    margin: 1.3rem 0;
+    transition: all .3s;
+}
+
+.sidebar-item:hover {
+    background-color: #0b3e68;
+    padding: 1.3rem 3rem;
+    margin: 0;
+}
+
+.sidebar-link:visited,
+.sidebar-link:link {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #25679c;
+    transition: all .2s;
+}
+
+.sidebar-item:hover .sidebar-link {
+    text-decoration: none;
+    color: #dbdbdb;
+}
+
+/* MAIN BODY ////////////////////////////////// */
+
+.main-body {
+    width: 80%;
+    padding-top: 11rem;
+}

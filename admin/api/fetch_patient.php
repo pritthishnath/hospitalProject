@@ -1,14 +1,14 @@
 <?php
-$connect = new  mysqli("localhost", "root", "", "hospital_demo");
+include "db_config.php";
 $output = '';
 $find = $_POST['search'];
-if($connect)
+if($conn)
   { echo "Connect done";
     
 	$query = "SELECT PID,NAME,ADDRESS,GENDER,PHONE,EMAIL FROM patient_data WHERE NAME LIKE '$find%'";
-	echo"$query";
-	$result = $connect->query($query) or die("MySQL error: " . $connect->error . "<hr>\nQuery: $query");
-if($connect->affected_rows > 0)
+	// echo"$query";
+	$result = $conn->query($query) or die("MySQL error: " . $conn->error . "<hr>\nQuery: $query");
+if($conn->affected_rows > 0)
 {
 	while($row = $result->fetch_assoc())
 	{
